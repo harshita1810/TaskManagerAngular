@@ -1,0 +1,10 @@
+#main {
+    float: right;
+    width: 75%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    background-color: var(--main-bg);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  

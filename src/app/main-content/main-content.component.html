@@ -1,0 +1,18 @@
+<div class="task-form">
+    <input type="text" [(ngModel)]="newTaskTitle" placeholder="Title">
+    <input type="text" [(ngModel)]="newTaskDescription" placeholder="Description">
+    <input type="date" [(ngModel)]="newTaskDueDate">
+    <select [(ngModel)]="newTaskPriority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button (click)="addTask(newTaskTitle, newTaskDescription, newTaskDueDate, newTaskPriority)">Add Task</button>
+  </div>
+  <ul>
+    <li *ngFor="let task of tasks">
+      {{ task.title }} - {{ task.description }} - {{ task.dueDate }} - {{ task.priority }} - {{ task.status }}
+      <button (click)="deleteTask(task.id)">Delete</button>
+    </li>
+  </ul>
+  

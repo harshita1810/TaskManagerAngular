@@ -1,0 +1,15 @@
+#addBtn {
+    width: 100px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background-color: var(--sec-bg);
+    color: white;
+    padding: 5px;
+    border: 2px solid var(--sec-bg);
+    outline: 1px solid var(--sec-bg);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  
